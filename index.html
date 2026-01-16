@@ -1,159 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BRUT - Studio creativo especializado en páginas web, software, diseño visual y desarrollo digital.">
+    <meta name="keywords" content="studio creativo, páginas web, software, diseño digital, diseño visual">
     <title>BRUT</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="noise"></div>
 
-    <nav>
-        <div class="logo">BRUT</div>
-        <ul class="nav-links">
-            <li><a href="#prod">PROD</a></li>
-            <li><a href="#events">EVENTS</a></li>
-            <li><a href="#publishing">PUBLISHING</a></li>
-            <li><a href="#exhibitions">EXHIBITIONS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
-    </nav>
+   <nav role="navigation" aria-label="Navegación principal">
+    <div class="logo">BRUT</div>
+    <ul class="nav-links">
+        <li><a href="#eventos">EVENTS</a></li>
+        <li><a href="#studio">STUDIO</a></li>
+        <li><a href="#publicaciones">PUBLISHING</a></li>
+        <li><a href="#exhibiciones">EXHIBITIONS</a></li>
+        <li><a href="#contacto">CONTACT</a></li>
+    </ul>
+</nav>
 
-    <section class="hero">
-        <div class="floating-shapes">
-            <div class="shape"></div>
-            <div class="shape"></div>
-            <div class="shape"></div>
-        </div>
+    <div class="scroll-indicator" aria-hidden="true">SCROLL</div>
+
+    <section class="hero" id="home">
         <h1 class="hero-title">BRUT</h1>
-    </section>
-
-    <div class="scroll-indicator">SCROLL</div>
-
-    <section id="prod">
-        <h2 class="section-title">PROD</h2>
-        <div class="grid">
-            <div class="card">
-                <div class="card-number">01</div>
-                <h3>CREATIVE STUDIO</h3>
-                <p>We craft bold visual experiences that challenge conventions and push boundaries. Raw aesthetics meet purposeful design.</p>
-            </div>
-            <div class="card">
-                <div class="card-number">02</div>
-                <h3>BRAND IDENTITY</h3>
-                <p>Building distinctive brand systems with uncompromising clarity. Every element serves a purpose.</p>
-            </div>
-            <div class="card">
-                <div class="card-number">03</div>
-                <h3>DIGITAL WORK</h3>
-                <p>Interactive experiences that break the grid. Functional brutalism in digital form.</p>
-            </div>
+        <div class="floating-shapes" aria-hidden="true">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
         </div>
     </section>
 
-    <section id="events">
-        <h2 class="section-title">EVENTS</h2>
+    <section id="eventos">
+        <h2 class="section-title">EVENTOS</h2>
         <div class="events-list">
-            <div class="event-item">
-                <div class="event-date">MAR 15</div>
+            <article class="event-item">
+                <div class="event-date">15 MAR</div>
                 <div class="event-info">
-                    <h3>BRUTALIST FUTURES</h3>
-                    <p>Annual design conference</p>
+                    <h3>FUTUROS BRUTALISTAS</h3>
+                    <p>Conferencia anual de diseño</p>
                 </div>
-            </div>
-            <div class="event-item">
-                <div class="event-date">APR 22</div>
+            </article>
+            <article class="event-item">
+                <div class="event-date">22 ABR</div>
                 <div class="event-info">
-                    <h3>RAW MATERIALS</h3>
-                    <p>Workshop series launch</p>
+                    <h3>MATERIALES CRUDOS</h3>
+                    <p>Lanzamiento de serie de talleres</p>
                 </div>
-            </div>
-            <div class="event-item">
-                <div class="event-date">MAY 08</div>
+            </article>
+            <article class="event-item">
+                <div class="event-date">08 MAY</div>
                 <div class="event-info">
-                    <h3>CONCRETE VISIONS</h3>
-                    <p>Exhibition opening night</p>
+                    <h3>VISIONES CONCRETAS</h3>
+                    <p>Inauguración de exhibición</p>
                 </div>
-            </div>
-            <div class="event-item">
-                <div class="event-date">JUN 30</div>
+            </article>
+            <article class="event-item">
+                <div class="event-date">30 JUN</div>
                 <div class="event-info">
-                    <h3>STRUCTURE TALKS</h3>
-                    <p>Guest speaker series</p>
+                    <h3>CHARLAS ESTRUCTURALES</h3>
+                    <p>Serie de speakers invitados</p>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
-    <section id="publishing">
-        <h2 class="section-title">PUBLISHING</h2>
+    <section id="studio">
+        <h2 class="section-title">STUDIO</h2>
         <div class="grid">
-            <div class="card">
-                <div class="card-number">—</div>
-                <h3>QUARTERLY JOURNAL</h3>
-                <p>In-depth explorations of brutalist philosophy, minimalism, and raw design thinking. 200 pages of unfiltered content.</p>
-            </div>
-            <div class="card">
-                <div class="card-number">—</div>
-                <h3>MONOGRAPHS</h3>
-                <p>Limited edition books featuring pioneering designers and architects. Documenting the evolution of brutal aesthetics.</p>
-            </div>
-            <div class="card">
-                <div class="card-number">—</div>
+            <article class="card">
+                <div class="card-number" aria-hidden="true">01</div>
+                <h3>VISUAL WORK</h3>
+                <p>Creamos identidades visuales que rompen moldes. Diseño gráfico sin concesiones, directo al punto.</p>
+            </article>
+            <article class="card">
+                <div class="card-number" aria-hidden="true">02</div>
+                <h3>WEB & SOFTWARE</h3>
+                <p>Desarrollamos experiencias digitales completas. Desde sitios web únicos hasta soluciones de software robustas. Código limpio, diseño crudo y funcionalidad impecable.</p>
+            </article>
+            <article class="card">
+                <div class="card-number" aria-hidden="true">03</div>
+                <h3>DIGITAL STUFF</h3>
+                <p>Experimentamos con lo digital en todas sus formas. Apps, herramientas, prototipos y todo lo que se nos ocurra.</p>
+            </article>
+            <article class="card">
+                <div class="card-number" aria-hidden="true">04</div>
+                <h3>EVENT PRODUCTION</h3>
+                <p>Producimos eventos que rompen con lo convencional. Desde concept hasta ejecución, creamos experiencias inmersivas que dejan huella.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="publicaciones">
+        <h2 class="section-title">PUBLICACIONES</h2>
+        <div class="grid">
+            <article class="card">
+                <div class="card-number" aria-hidden="true">—</div>
+                <h3>MANIFIESTOS</h3>
+                <p>Declaraciones directas sin filtros. Textos crudos que desafían el pensamiento convencional. Formato A5, tipografía brutal, mensaje puro.</p>
+            </article>
+            <article class="card">
+                <div class="card-number" aria-hidden="true">—</div>
+                <h3>LIBROS</h3>
+                <p>Ediciones limitadas que documentan lo esencial. Arquitectura, diseño y cultura visual sin ornamentos. Solo estructura y contenido.</p>
+            </article>
+            <article class="card">
+                <div class="card-number" aria-hidden="true">—</div>
                 <h3>ZINES & PRINTS</h3>
-                <p>Raw, experimental publications. Hand-assembled editions exploring form, space, and structure.</p>
-            </div>
+                <p>Publicaciones crudas y experimentales. Ediciones ensambladas a mano explorando forma, espacio y estructura.</p>
+            </article>
         </div>
     </section>
 
-    <section id="exhibitions">
-        <h2 class="section-title">EXHIBITIONS</h2>
+    <section id="exhibiciones">
+        <h2 class="section-title">EXHIBICIONES</h2>
         <div class="exhibition-grid">
-            <div class="exhibition-item" data-title="CONCRETE FORMS">
-                <div class="exhibition-pattern">
+            <article class="exhibition-item" data-title="FORMAS CONCRETAS">
+                <div class="exhibition-pattern" aria-hidden="true">
                     <div></div><div></div><div></div><div></div>
                 </div>
-            </div>
-            <div class="exhibition-item" data-title="RAW SPACE">
-                <div class="exhibition-pattern">
+            </article>
+            <article class="exhibition-item" data-title="ESPACIO CRUDO">
+                <div class="exhibition-pattern" aria-hidden="true">
                     <div></div><div></div><div></div><div></div>
                 </div>
-            </div>
-            <div class="exhibition-item" data-title="STRUCTURE">
-                <div class="exhibition-pattern">
+            </article>
+            <article class="exhibition-item" data-title="ESTRUCTURA">
+                <div class="exhibition-pattern" aria-hidden="true">
                     <div></div><div></div><div></div><div></div>
                 </div>
-            </div>
-            <div class="exhibition-item" data-title="MINIMAL">
-                <div class="exhibition-pattern">
+            </article>
+            <article class="exhibition-item" data-title="MINIMAL">
+                <div class="exhibition-pattern" aria-hidden="true">
                     <div></div><div></div><div></div><div></div>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
-    <section id="contact">
-        <h2 class="section-title">CONTACT</h2>
-        <div class="contact-container">
-            <div class="contact-info">HELLO@BRUT.STUDIO</div>
-            <div class="contact-form">
-                <div class="form-group">
-                    <input type="text" placeholder="NAME" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="EMAIL" required>
-                </div>
-                <div class="form-group">
-                    <textarea rows="6" placeholder="MESSAGE" required></textarea>
-                </div>
-                <button class="submit-btn">SEND</button>
-            </div>
+    <section id="contacto">
+    <h2 class="section-title">CONTACTO</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <a href="mailto:HOLA@BRUT.STUDIO" style="color: inherit; text-decoration: none;">HOLA@BRUT.STUDIO</a>
         </div>
-    </section>
+        <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+                <label for="nombre">NOMBRE</label>
+                <input type="text" id="nombre" name="nombre" required aria-required="true">
+                <div class="error-message" id="nombreError">Por favor ingresá tu nombre</div>
+            </div>
+            <div class="form-group">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+                <div class="error-message" id="emailError">Por favor ingresá un email válido</div>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">MENSAJE</label>
+                <textarea rows="6" id="mensaje" name="mensaje" required aria-required="true"></textarea>
+                <div class="error-message" id="mensajeError">Por favor ingresá tu mensaje</div>
+            </div>
+            <button type="submit" class="submit-btn">ENVIAR</button>
+            <div class="success-message" id="successMessage">
+                ¡MENSAJE ENVIADO! NOS PONDREMOS EN CONTACTO PRONTO.
+            </div>
+        </form>
+    </div>
+</section>
 
-    <footer>
-        © 2026 BRUT — ALL RIGHTS RESERVED
+    <footer role="contentinfo">
+        © 2026 BRUT — TODOS LOS DERECHOS RESERVADOS
     </footer>
 
     <script src="script.js"></script>
