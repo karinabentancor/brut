@@ -3,117 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BRUT - Studio creativo especializado en páginas web, software, diseño visual y desarrollo digital.">
+    <meta name="description" content="DE LA GRAN PUTA - Studio creativo especializado en páginas web, software, diseño visual y desarrollo digital.">
     <meta name="keywords" content="studio creativo, páginas web, software, diseño digital, diseño visual">
-    <title>BRUT</title>
+    <title>DE LA GRAN PUTA</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .floating-contact {
+            position: fixed;
+            right: -38px;
+            top: 50%;
+            transform: translateY(-50%) rotate(90deg);
+            transform-origin: center center;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            padding: 10px 18px;
+            z-index: 999;
+            border: 2px solid #000;
+            transition: background 0.2s, color 0.2s;
+            white-space: nowrap;
+        }
+        .floating-contact:hover {
+            background: #fff;
+            color: #000;
+        }
+    </style>
 </head>
 <body>
     <div class="noise"></div>
 
-   <nav role="navigation" aria-label="Navegación principal">
-    <div class="logo">BRUT</div>
-    <ul class="nav-links">
-        <li><a href="#eventos">EVENTS</a></li>
-        <li><a href="#studios">STUDIOS</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#publicaciones">PUBLISHING</a></li>
-        <li><a href="#exhibiciones">EXHIBITIONS</a></li>
-        <li><a href="#contacto">CONTACT</a></li>
-    </ul>
-</nav>
+    <nav role="navigation" aria-label="Navegación principal">
+        <div class="logo">DE LA GRAN PUTA</div>
+        <ul class="nav-links">
+            <li><a href="#studios">STUDIOS</a></li>
+            <li><a href="#projects">PROYECTOS</a></li>
+            <li><a href="#publicaciones">PUBLICACIONES</a></li>
+            <li><a href="#exhibiciones">EXHIBICIONES</a></li>
+            <li><a href="#eventos">EVENTOS</a></li>
+        </ul>
+    </nav>
+
+    <a href="#contacto" class="floating-contact" aria-label="Ir a contacto">CONTACTO</a>
 
     <div class="scroll-indicator" aria-hidden="true">SCROLL</div>
 
     <section class="hero" id="home">
-        <h1 class="hero-title">BRUT</h1>
-        <div class="floating-shapes" aria-hidden="true">
-            <div class="shape"></div>
-            <div class="shape"></div>
-            <div class="shape"></div>
-        </div>
-    </section>
-
-    <section id="eventos">
-        <h2 class="section-title">EVENTOS</h2>
-        <div class="events-list">
-            <article class="event-item">
-                <div class="event-date">15 MAR</div>
-                <div class="event-info">
-                    <h3>FUTUROS BRUTALISTAS</h3>
-                    <p>Conferencia anual de diseño</p>
-                </div>
-            </article>
-            <article class="event-item">
-                <div class="event-date">22 ABR</div>
-                <div class="event-info">
-                    <h3>MATERIALES CRUDOS</h3>
-                    <p>Lanzamiento de serie de talleres</p>
-                </div>
-            </article>
-            <article class="event-item">
-                <div class="event-date">08 MAY</div>
-                <div class="event-info">
-                    <h3>VISIONES CONCRETAS</h3>
-                    <p>Inauguración de exhibición</p>
-                </div>
-            </article>
-            <article class="event-item">
-                <div class="event-date">30 JUN</div>
-                <div class="event-info">
-                    <h3>CHARLAS ESTRUCTURALES</h3>
-                    <p>Serie de speakers invitados</p>
-                </div>
-            </article>
-        </div>
+        <canvas id="heroCanvas" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;"></canvas>
     </section>
 
     <section id="studios">
         <h2 class="section-title">STUDIOS</h2>
-        
         <div class="studios-intro">
             <p>ESPACIOS DISPONIBLES PARA ALQUILER POR TURNOS DE 4 HORAS O DÍA COMPLETO</p>
         </div>
-
         <div class="studios-container">
             <article class="studio-block">
                 <h3 class="studio-block-title">ESTUDIO I</h3>
-                
-                <!-- Slider de fotos -->
                 <div class="studio-slider">
                     <div class="slider-container">
                         <div class="slider-track" id="slider1">
-                            <div class="slider-item">
-                                <img src="estudio1-foto1.jpg" alt="Estudio I - Foto 1" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 font-family=%22Courier New%22 font-size=%2224%22 fill=%22%23000%22%3EESTUDIO I - FOTO 1%3C/text%3E%3C/svg%3E'">
-                            </div>
-                            <div class="slider-item">
-                                <img src="estudio1-foto2.jpg" alt="Estudio I - Foto 2" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 font-family=%22Courier New%22 font-size=%2224%22 fill=%22%23000%22%3EESTUDIO I - FOTO 2%3C/text%3E%3C/svg%3E'">
-                            </div>
-                            <div class="slider-item">
-                                <img src="estudio1-foto3.jpg" alt="Estudio I - Foto 3" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 font-family=%22Courier New%22 font-size=%2224%22 fill=%22%23000%22%3EESTUDIO I - FOTO 3%3C/text%3E%3C/svg%3E'">
-                            </div>
-                            <div class="slider-item">
-                                <img src="estudio1-foto4.jpg" alt="Estudio I - Foto 4" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 font-family=%22Courier New%22 font-size=%2224%22 fill=%22%23000%22%3EESTUDIO I - FOTO 4%3C/text%3E%3C/svg%3E'">
-                            </div>
+                            <div class="slider-item"><img src="estudio1-foto1.jpg" alt="Estudio I - Foto 1" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 font-family=%22Courier New%22 font-size=%2224%22 fill=%22%23000%22%3EESTUDIO I - FOTO 1%3C/text%3E%3C/svg%3E'"></div>
+                            <div class="slider-item"><img src="estudio1-foto2.jpg" alt="Estudio I - Foto 2" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 font-family=%22Courier New%22 font-size=%2224%22 fill=%22%23000%22%3EESTUDIO I - FOTO 2%3C/text%3E%3C/svg%3E'"></div>
+                            <div class="slider-item"><img src="estudio1-foto3.jpg" alt="Estudio I - Foto 3" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 font-family=%22Courier New%22 font-size=%2224%22 fill=%22%23000%22%3EESTUDIO I - FOTO 3%3C/text%3E%3C/svg%3E'"></div>
+                            <div class="slider-item"><img src="estudio1-foto4.jpg" alt="Estudio I - Foto 4" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 font-family=%22Courier New%22 font-size=%2224%22 fill=%22%23000%22%3EESTUDIO I - FOTO 4%3C/text%3E%3C/svg%3E'"></div>
                         </div>
                     </div>
                     <button class="slider-btn prev" data-slider="slider1">←</button>
                     <button class="slider-btn next" data-slider="slider1">→</button>
                     <div class="slider-dots" id="dots1"></div>
                 </div>
-
                 <div class="studio-info-grid">
                     <div class="studio-card">
-                        <div class="studio-header">
-                            <div class="studio-price">$3000 / 4HS</div>
-                        </div>
+                        <div class="studio-header"><div class="studio-price">$3000 / 4HS</div></div>
                         <div class="studio-features">
                             <p>INCLUYE:</p>
                             <ul>
-                                <li>SILLÓN</li>
-                                <li>LUCES</li>
-                                <li>MESA BAJA</li>
-                                <li>ESPEJO</li>
+                                <li>SILLÓN</li><li>LUCES</li><li>MESA BAJA</li><li>ESPEJO</li>
                             </ul>
                         </div>
                     </div>
@@ -122,44 +91,27 @@
 
             <article class="studio-block">
                 <h3 class="studio-block-title">ESTUDIO COMPLETO</h3>
-                
-                <!-- Slider de fotos -->
                 <div class="studio-slider">
                     <div class="slider-container">
                         <div class="slider-track" id="slider2">
-                            <div class="slider-item">
-                                <img src="estudio-completo-foto1.jpg" alt="Estudio Completo - Foto 1" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 font-family=%22Courier New%22 font-size=%2224%22 fill=%22%23000%22%3EESTUDIO COMPLETO - FOTO 1%3C/text%3E%3C/svg%3E'">
-                            </div>
-                            <div class="slider-item">
-                                <img src="estudio-completo-foto2.jpg" alt="Estudio Completo - Foto 2" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 font-family=%22Courier New%22 font-size=%2224%22 fill=%22%23000%22%3EESTUDIO COMPLETO - FOTO 2%3C/text%3E%3C/svg%3E'">
-                            </div>
-                            <div class="slider-item">
-                                <img src="estudio-completo-foto3.jpg" alt="Estudio Completo - Foto 3" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 font-family=%22Courier New%22 font-size=%2224%22 fill=%22%23000%22%3EESTUDIO COMPLETO - FOTO 3%3C/text%3E%3C/svg%3E'">
-                            </div>
-                            <div class="slider-item">
-                                <img src="estudio-completo-foto4.jpg" alt="Estudio Completo - Foto 4" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 font-family=%22Courier New%22 font-size=%2224%22 fill=%22%23000%22%3EESTUDIO COMPLETO - FOTO 4%3C/text%3E%3C/svg%3E'">
-                            </div>
+                            <div class="slider-item"><img src="estudio-completo-foto1.jpg" alt="Estudio Completo - Foto 1" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 font-family=%22Courier New%22 font-size=%2224%22 fill=%22%23000%22%3EESTUDIO COMPLETO%3C/text%3E%3C/svg%3E'"></div>
+                            <div class="slider-item"><img src="estudio-completo-foto2.jpg" alt="Estudio Completo - Foto 2" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 font-family=%22Courier New%22 font-size=%2224%22 fill=%22%23000%22%3EESTUDIO COMPLETO%3C/text%3E%3C/svg%3E'"></div>
+                            <div class="slider-item"><img src="estudio-completo-foto3.jpg" alt="Estudio Completo - Foto 3" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 font-family=%22Courier New%22 font-size=%2224%22 fill=%22%23000%22%3EESTUDIO COMPLETO%3C/text%3E%3C/svg%3E'"></div>
+                            <div class="slider-item"><img src="estudio-completo-foto4.jpg" alt="Estudio Completo - Foto 4" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 font-family=%22Courier New%22 font-size=%2224%22 fill=%22%23000%22%3EESTUDIO COMPLETO%3C/text%3E%3C/svg%3E'"></div>
                         </div>
                     </div>
                     <button class="slider-btn prev" data-slider="slider2">←</button>
                     <button class="slider-btn next" data-slider="slider2">→</button>
                     <div class="slider-dots" id="dots2"></div>
                 </div>
-
                 <div class="studio-info-grid">
                     <div class="studio-card">
-                        <div class="studio-header">
-                            <div class="studio-price">$8000 / 12HS</div>
-                        </div>
+                        <div class="studio-header"><div class="studio-price">$8000 / 12HS</div></div>
                         <div class="studio-features">
                             <p>INCLUYE TODO LO ANTERIOR MÁS:</p>
                             <ul>
-                                <li>MESA + 2 SILLAS</li>
-                                <li>ESTANTERÍA</li>
-                                <li>PARLANTES</li>
-                                <li>COCINA CON JARRA ELÉCTRICA</li>
-                                <li>HELADERA</li>
-                                <li>BAÑO</li>
+                                <li>MESA + 2 SILLAS</li><li>ESTANTERÍA</li><li>PARLANTES</li>
+                                <li>COCINA CON JARRA ELÉCTRICA</li><li>HELADERA</li><li>BAÑO</li>
                             </ul>
                         </div>
                     </div>
@@ -180,28 +132,20 @@
         <div class="calendar-section">
             <h3 class="calendar-title">MARZO 2026 — DISPONIBILIDAD</h3>
             <div class="calendar-legend">
-                <div class="legend-item">
-                    <div class="legend-box available"></div>
-                    <span>DISPONIBLE</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-box occupied"></div>
-                    <span>OCUPADO</span>
-                </div>
+                <div class="legend-item"><div class="legend-box available"></div><span>DISPONIBLE</span></div>
+                <div class="legend-item"><div class="legend-box occupied"></div><span>OCUPADO</span></div>
             </div>
-            <div class="calendar-grid" id="calendar">
-                <!-- Calendar will be generated by JS -->
-            </div>
+            <div class="calendar-grid" id="calendar"></div>
         </div>
     </section>
 
     <section id="projects">
-        <h2 class="section-title">PROJECTS</h2>
+        <h2 class="section-title">PROYECTOS</h2>
         <div class="grid">
             <article class="card">
                 <div class="card-number" aria-hidden="true">01</div>
                 <h3>VISUAL WORK</h3>
-                <p>Creamos identidades visuales que rompen moldes. Diseño gráfico sin concesiones, directo al punto.</p>
+                <p>Creamos identidades visuales que rompen moldes. Diseño gráfico, ilustración y dirección de arte sin concesiones. Desde marcas hasta piezas de comunicación, todo con una estética propia y directa al punto.</p>
             </article>
             <article class="card">
                 <div class="card-number" aria-hidden="true">02</div>
@@ -216,7 +160,7 @@
             <article class="card">
                 <div class="card-number" aria-hidden="true">04</div>
                 <h3>EVENT PRODUCTION</h3>
-                <p>Producimos eventos que rompen con lo convencional. Desde concept hasta ejecución, creamos experiencias inmersivas que dejan huella.</p>
+                <p>Producimos eventos que rompen con lo convencional. Desde el concepto hasta la ejecución, creamos experiencias inmersivas que dejan huella.</p>
             </article>
         </div>
     </section>
@@ -246,57 +190,71 @@
         <h2 class="section-title">EXHIBICIONES</h2>
         <div class="exhibition-grid">
             <article class="exhibition-item" data-title="FORMAS CONCRETAS">
-                <div class="exhibition-pattern" aria-hidden="true">
-                    <div></div><div></div><div></div><div></div>
-                </div>
+                <div class="exhibition-pattern" aria-hidden="true"><div></div><div></div><div></div><div></div></div>
             </article>
             <article class="exhibition-item" data-title="ESPACIO CRUDO">
-                <div class="exhibition-pattern" aria-hidden="true">
-                    <div></div><div></div><div></div><div></div>
-                </div>
+                <div class="exhibition-pattern" aria-hidden="true"><div></div><div></div><div></div><div></div></div>
             </article>
             <article class="exhibition-item" data-title="ESTRUCTURA">
-                <div class="exhibition-pattern" aria-hidden="true">
-                    <div></div><div></div><div></div><div></div>
-                </div>
+                <div class="exhibition-pattern" aria-hidden="true"><div></div><div></div><div></div><div></div></div>
             </article>
             <article class="exhibition-item" data-title="MINIMAL">
-                <div class="exhibition-pattern" aria-hidden="true">
-                    <div></div><div></div><div></div><div></div>
-                </div>
+                <div class="exhibition-pattern" aria-hidden="true"><div></div><div></div><div></div><div></div></div>
+            </article>
+        </div>
+    </section>
+
+    <section id="eventos">
+        <h2 class="section-title">EVENTOS</h2>
+        <div class="events-list">
+            <article class="event-item">
+                <div class="event-date">15 MAR</div>
+                <div class="event-info"><h3>FUTUROS BRUTALISTAS</h3><p>Conferencia anual de diseño</p></div>
+            </article>
+            <article class="event-item">
+                <div class="event-date">22 ABR</div>
+                <div class="event-info"><h3>MATERIALES CRUDOS</h3><p>Lanzamiento de serie de talleres</p></div>
+            </article>
+            <article class="event-item">
+                <div class="event-date">08 MAY</div>
+                <div class="event-info"><h3>VISIONES CONCRETAS</h3><p>Inauguración de exhibición</p></div>
+            </article>
+            <article class="event-item">
+                <div class="event-date">30 JUN</div>
+                <div class="event-info"><h3>CHARLAS ESTRUCTURALES</h3><p>Serie de speakers invitados</p></div>
             </article>
         </div>
     </section>
 
     <section id="contacto">
-    <h2 class="section-title">CONTACTO</h2>
-    <div class="contact-container">
-        <div class="contact-info">
-            <a href="mailto:HOLA@BRUT.STUDIO" style="color: inherit; text-decoration: none;">HOLA@BRUT.STUDIO</a>
+        <h2 class="section-title">CONTACTO</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="mailto:HOLA@DELAGRANPUTA.STUDIO" style="color: inherit; text-decoration: none;">HOLA@DELAGRANPUTA.STUDIO</a>
+            </div>
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" id="nombre" name="nombre" required aria-required="true">
+                    <div class="error-message" id="nombreError">Por favor ingresá tu nombre</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                    <div class="error-message" id="emailError">Por favor ingresá un email válido</div>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">MENSAJE</label>
+                    <textarea rows="6" id="mensaje" name="mensaje" required aria-required="true"></textarea>
+                    <div class="error-message" id="mensajeError">Por favor ingresá tu mensaje</div>
+                </div>
+                <button type="submit" class="submit-btn">ENVIAR</button>
+                <div class="success-message" id="successMessage">
+                    ¡MENSAJE ENVIADO! NOS PONDREMOS EN CONTACTO PRONTO.
+                </div>
+            </form>
         </div>
-        <form class="contact-form" id="contactForm" novalidate>
-            <div class="form-group">
-                <label for="nombre">NOMBRE</label>
-                <input type="text" id="nombre" name="nombre" required aria-required="true">
-                <div class="error-message" id="nombreError">Por favor ingresá tu nombre</div>
-            </div>
-            <div class="form-group">
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email" required aria-required="true">
-                <div class="error-message" id="emailError">Por favor ingresá un email válido</div>
-            </div>
-            <div class="form-group">
-                <label for="mensaje">MENSAJE</label>
-                <textarea rows="6" id="mensaje" name="mensaje" required aria-required="true"></textarea>
-                <div class="error-message" id="mensajeError">Por favor ingresá tu mensaje</div>
-            </div>
-            <button type="submit" class="submit-btn">ENVIAR</button>
-            <div class="success-message" id="successMessage">
-                ¡MENSAJE ENVIADO! NOS PONDREMOS EN CONTACTO PRONTO.
-            </div>
-        </form>
-    </div>
-</section>
+    </section>
 
     <!-- Booking Modal -->
     <div class="booking-modal" id="bookingModal">
@@ -329,7 +287,7 @@
     </div>
 
     <footer role="contentinfo">
-        © 2026 BRUT — TODOS LOS DERECHOS RESERVADOS
+        © 2026 DE LA GRAN PUTA — TODOS LOS DERECHOS RESERVADOS
     </footer>
 
     <script src="script.js"></script>
